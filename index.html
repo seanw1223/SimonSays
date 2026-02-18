@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SIMON Game</title>
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main class="app">
+    <h1 class="title">SIMON</h1>
+
+    <section class="hud">
+      <div class="display">
+        <div class="display__label">Score</div>
+        <div class="number-display1">00</div>
+      </div>
+
+      <button class="start-button" type="button">START</button>
+<button class="stop-button" type="button">STOP</button>
+
+
+      <div class="display">
+        <div class="display__label">High</div>
+        <div class="number-display2">00</div>
+      </div>
+    </section>
+
+    <section class="board" aria-label="Simon board">
+      <button class="pad circle2" data-color="green" aria-label="Green"></button>
+      <button class="pad circle3" data-color="red" aria-label="Red"></button>
+      <button class="pad circle4" data-color="yellow" aria-label="Yellow"></button>
+      <button class="pad circle5" data-color="blue" aria-label="Blue"></button>
+
+      <div class="center">
+        <div class="status">
+          <span class="red-light" aria-hidden="true"></span>
+          <span class="status__text">READY</span>
+        </div>
+      </div>
+    </section>
+
+    <p class="message" role="status" aria-live="polite">Press START to begin.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
